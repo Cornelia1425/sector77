@@ -700,6 +700,29 @@ export default function ThreeScene() {
         </div>
       )}
       
+      {/* About panel: what this is and how to use it */}
+      <div style={{
+        position: 'fixed',
+        bottom: '20px',
+        right: '20px',
+        maxWidth: '300px',
+        backgroundColor: 'rgba(0, 0, 0, 0.8)',
+        color: 'white',
+        padding: '10px 14px',
+        borderRadius: '4px',
+        fontSize: '12px',
+        lineHeight: 1.5,
+        fontFamily: 'Roboto, system-ui, Avenir, Helvetica, Arial, sans-serif',
+        zIndex: 1001
+      }}>
+        <div style={{ fontWeight: 700, fontSize: '13px', marginBottom: '4px' }}>
+          Sector77, a starship museum on Solana
+        </div>
+        <div>Hover a ship to see its details. Click it to try the mint flow.</div>
+        <div>Minting uses Phantom on devnet. It sends a small test transaction, no real assets.</div>
+        <div>Press Pilot, then fly with WASD or the arrow keys.</div>
+      </div>
+
       {tooltip.show && (
         <div
           style={{
